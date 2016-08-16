@@ -1,0 +1,124 @@
+html, body{
+  overflow-x: hidden;
+}
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  color: #333333; 
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', Times, Georgia, serif;
+}
+header h1 {
+  font-size: 50px;
+  font-weight: normal;  margin-bottom: 10px;
+}
+header p {
+  font-family: 'Roboto Slab', Times, Georgia, serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: light;
+}
+header a.btn {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.one-half a {
+  font-size: 14px;
+  font-weight: semibold;
+  text-decoration: none;
+}
+.one-third h2 {
+  font-size: 28px;
+  font-weight: normal;
+}
+.one-third p {
+  font-size: 20px;
+  font-weight: light;
+}
+h2 {
+  font-size: 28px;
+  font-weight: normal;
+}
+.one-third h3 {
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: bold;
+}
+.one-third h4 {
+  text-transform: uppercase;
+  font-size: 26px;
+  font-weight: normal;
+}
+.one-third a.btn {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: semibold;
+  text-decoration: none;
+}
+.one-third li {
+  font-size: 21px;
+  font-weight: normal;
+}
+.box-middle h5 {
+  text-transform: uppercase;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: semibold;
+} 
+.testimonials h2 {
+  font-size: 28px;
+}
+.testimonials p {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: light;
+}
+.one-third blockquote {
+  font-size: 14px;
+  font-weight: bold;
+}
+.testimonials .one-third p {
+  font-size: 14px;
+  font-style: italic;
+}
+footer h5 {
+  text-transform: uppercase;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+footer li {
+  font-size: 13px;
+  font-weight: normal;
+  text-decoration: none;
+}
+footer p {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+
+/* GRID */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+}
+.container:before,
+.container:after {
+  content: " ";
+  display: table;
+}
+.container:after {
+  clear: both;
+}
+.one-half, .one-third, .one-fourth {
+  width: 96%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  margin: 0 2% 20px;
+}
