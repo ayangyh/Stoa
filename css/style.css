@@ -8,27 +8,140 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto Slab', Times, Georgia, serif;
 }
-header h1 {
-  font-size: 50px;
-  font-weight: normal;  margin-bottom: 10px;
+h2 {
+  font-size: 28px;
+  font-weight: normal;
+  margin-bottom: 5px;
 }
-header p {
+p { 
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 100; 
+}
+
+/* GRID */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15v px;
+  padding-right: 15px;
+  position: relative;
+}
+.container:before,
+.container:after {
+  content: " ";
+  display: table;
+}
+.container:after {
+  clear: both;
+}
+.one-half, .one-third, .one-fourth {
+  width: 96%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  margin: 0 2% 20px;
+}
+
+/*
+@media (min-width: 768px) {
+  .container {
+  	width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+  	width: 970px;
+  }
+  .one-half {
+  	width: 46%;
+  }
+  .one-third {
+  	width: 29.33333%;
+  }
+  .one-fourth {
+  	width: 21%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+  	width: 1170px;
+  }
+}
+*/
+
+/* HEADER */
+header {
+	background-image: url("../images/background.png");
+	background-position: 0 0;
+	background-size: cover;
+	height: 100vh;
+}
+header nav {
+  padding: 2em 0;
+}
+header nav ul {
+  display: inline;
+  text-align: right;
+  float: right;
+  margin: 0;
+}
+header nav ul > li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 15px;
+}
+header nav ul > li.btn-outline {
+  padding: 10px 25px;
+  border: 3px solid #16ffc8;
+  border-radius: 6px;
+}
+header nav ul > li.btn-outline:hover {
+  background: #16ffc8;
+}
+header nav ul > li > a {
+  color: #16ffc8;
+  text-decoration: none;
+}
+header nav ul > li.btn-outline:hover > a {
+  color: #333333;
+}
+header .hero {
+  text-align: center;
+  display: block;
+  position: relative;
+}
+header .hero h1 {
+  font-size: 50px;
+  line-height: 60px;  
+  font-weight: 400;
+  margin: 450px 0 20px;
+  color: #3DC7E8;
+}
+header .hero p {
   font-family: 'Roboto Slab', Times, Georgia, serif;
   font-size: 24px;
   line-height: 30px;
-  font-weight: light;
+  font-weight: 300;
+  margin: 10px 0 30px;
+  color: #FFFFFF;
 }
-header a.btn {
-  text-transform: uppercase;
+
+/* BUTTONS */
+.btn {
+  border-radius: 4px;
+  color: #333333;
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  background: #16ffc8;
+  border: 2px solid #16ffc8;
+  box-shadow: 0px 2px 0px 0px #16ffc8;
 }
-.one-half a {
-  font-size: 14px;
-  font-weight: semibold;
-  text-decoration: none;
-}
+
+/* FEATURES */
 .one-third h2 {
   font-size: 28px;
   font-weight: normal;
@@ -99,26 +212,3 @@ footer p {
   font-size: 12px;
 }
 
-/* GRID */
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
-}
-.container:before,
-.container:after {
-  content: " ";
-  display: table;
-}
-.container:after {
-  clear: both;
-}
-.one-half, .one-third, .one-fourth {
-  width: 96%;
-  float: left;
-  position: relative;
-  min-height: 1px;
-  margin: 0 2% 20px;
-}
