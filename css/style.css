@@ -72,7 +72,7 @@ p {
 
 /* HEADER */
 header {
-	background-image: url("../images/background.png");
+	background-image: url("../images/background-hero.png");
 	background-position: 0 0;
 	background-size: cover;
 	height: 100vh;
@@ -141,14 +141,63 @@ header .hero p {
   box-shadow: 0px 2px 0px 0px #16ffc8;
 }
 
-/* FEATURES */
-.one-third h2 {
-  font-size: 28px;
-  font-weight: normal;
+/* BENEFITS */
+.benefits {
+  text-align: left;
+  display: inline-block;
+  position: relative;
 }
-.one-third p {
+.benefits ul {
+  margin: 100px auto;
+  padding: 4em 0;
+}
+.benefits ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+.benefits i {
+  color: ;
+  font-size: 50px;
+  float: left;
+  display: inline-block;
+  margin: 60px 55px 0 0;
+}
+.benefits i:after {
+  color: #4a9ba8;
+  top: 100%;
+  left: 13%;
+  border: solid-transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-radius: 50%;
+  margin-left: -10px;  
+}
+.benefits h2 {
+  color: #333333;
+  margin: px;
+}
+.benefits p {
+  float: left;
+  display: inline-block;
+  text-align: left;
   font-size: 20px;
-  font-weight: light;
+  margin-top: 20px;
+}
+.benefits img {
+  float: right;
+  display: inline-block;
+  margin: -840px 0 0 650px;
+}
+
+/* PRICING */
+.pricing {
+	background-image: url("../images/background-pricing.png");
+	background-position: 0 0;
+	background-size: cover;
+	height: 100vh;
 }
 h2 {
   font-size: 28px;
@@ -179,7 +228,9 @@ h2 {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: semibold;
-} 
+}
+
+/* TESTIMONIALS */ 
 .testimonials h2 {
   font-size: 28px;
 }
@@ -196,6 +247,8 @@ h2 {
   font-size: 14px;
   font-style: italic;
 }
+
+/* FOOTER */
 footer h5 {
   text-transform: uppercase;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
