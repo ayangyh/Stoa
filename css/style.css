@@ -76,7 +76,7 @@ header {
 	background-position: 0 0;
 	background-size: cover;
   display: block;
-	height: 146vh;
+	height: 100vh;
 }
 header nav {
   padding: 2em 0;
@@ -148,24 +148,30 @@ header .hero p {
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 893px 734px;
+  padding-top: 20px;
 }
-
 .benefits ul {
-    text-align: left;
+  text-align: left;
   display: inline-block;
   position: relative;
-  margin: 100px auto;
-  padding: 0em 0;
+  margin: ;
+  padding: 100px 0 100px 0;
 }
-.benefits ul li {
+.benefits li {
   list-style-type: none;
   display: inline-block;
+  padding-bottom: 40px;
 }
 .benefits i {
-  color: ;
+  color: #FFFFFF;
   font-size: 50px;
+  background-color: #4a9ba8;
+  border-radius: 50%;
   float: left;
   display: inline-block;
+  position: relative;
+  padding: 30px;
+  width: auto;
   margin: 0 0 0 0;
 }
 .benefits i:after {
@@ -181,21 +187,21 @@ header .hero p {
   border-radius: 50%;
   margin-left: -10px;  
 }
-
 .benefits .item {
-  margin: 0 0 0 70px;
+  margin: 0 0 0 150px;
   padding: 0 0 20px 0;
 }
-
 .benefits h2 {
   color: #333333;
-  margin: 0 0 0 0;
+  margin: 0;
+  padding-bottom: 20px;
 }
 .benefits p {
   float: left;
   display: inline-block;
   text-align: left;
   font-size: 20px;
+  width: 380px;
   margin: 0 0 0 0;
 }
 .benefits img {
