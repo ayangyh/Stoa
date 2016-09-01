@@ -273,9 +273,9 @@ header .hero p {
 .middle.heading h5 {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 16px;
-  font-weight: semibold;
+  font-weight: bold;
   text-transform: uppercase;
-  text-align: center;
+  text-align: middle;
   width: 275px;
   height: 45px;
   position: absolute;
