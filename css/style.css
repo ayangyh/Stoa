@@ -170,9 +170,10 @@ header .hero p {
   float: left;
   display: inline-block;
   position: relative;
-  padding: 30px;
-  width: auto;
-  margin: 0 0 0 0;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  margin: 50px 0 0 30px;
 }
 .benefits i:after {
   color: #4a9ba8;
@@ -281,7 +282,7 @@ header .hero p {
   color: #FFFFFF;
   background-color: #333333;
   display: inline-block;
-  margin: 0;
+  margin: 0 0 0 0;
 }
 .middle-top {
   background: #4a9ba8;
@@ -311,10 +312,10 @@ header .hero p {
   vertical-align: top;
   bottom: 100px;
 }
-.box h4 span.month {
+.box h4 span.yr {
   font-size: 16px;
   font-weight: normal;
-  color: ;
+  color: #FFFFFF ;
   vertical-align: middle;
 }
 .box .btn {
@@ -330,10 +331,15 @@ header .hero p {
   font-size: 21px;
   line-height: 31px;
   font-weight: normal;
+  text-align: left;
   margin: 0 40px 20px 0px;
 }
 .box.middle ul li {
-
+  font-size: 21px;
+  line-height: 31px;
+  font-weight: normal;
+  text-align: left;
+  margin: 0px 40px 20px 0px;
 }
 
 /* TESTIMONIALS */
