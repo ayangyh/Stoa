@@ -340,13 +340,14 @@ header .hero p {
 .testimonials h2 {
   font-size: 28px;
   color: #FFFFFF;
-  margin: 180px 0 0 0;
+  margin: 180px 0 0 80px;
 }
 .testimonials p {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 20px;
   color: #FFFFFF;
   width: 345px;
+  margin-left: 80px;
 }
 .testimonials li {
   margin: 50px 0 0 0;
@@ -390,18 +391,36 @@ header .hero p {
 }
 /* FOOTER */
 footer h5 {
-  text-transform: uppercase;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 15px;
   font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+
 }
-footer li {
+footer a {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 19px;
+  text-decoration: none;
+  text-align: left;
+  margin: 0 80px 0 0px;
+}
+footer nav ul > li {
+  list-style-type: none;
+}
+footer i {
   font-size: 13px;
   font-weight: normal;
   text-decoration: none;
+  display: inline-block;
 }
 footer p {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 12px;
+}
+footer img {
+  width: 69px;
+  height: 40px;
 }
 
