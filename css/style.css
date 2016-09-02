@@ -413,7 +413,7 @@ footer i {
   font-size: 13px;
   font-weight: normal;
   text-decoration: none;
-  display: inline-block;
+  display: inline;
 }
 footer p {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
