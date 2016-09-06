@@ -338,7 +338,7 @@ h5 {
   background-image: url("../images/image-testimonial-block.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;
+  /*height: 80vh;*/
   text-align: left;
 } 
 .testimonials h2 {
@@ -400,7 +400,7 @@ footer h5 {
   font-weight: bold;
   text-transform: uppercase;
   text-align: left;
-
+  color: #333333;
 }
 footer a {
   font-size: 13px;
@@ -409,6 +409,9 @@ footer a {
   text-decoration: none;
   text-align: left;
   margin: 0 80px 0 0px;
+}
+footer a:visited {
+  color: #333333;
 }
 footer nav ul > li {
   list-style-type: none;
