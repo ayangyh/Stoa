@@ -71,7 +71,7 @@ p {
 
 
 /* HEADER */
-header {
+header .header-hero {
 	background-image: url("../images/background-hero.png");
 	background-position: 0 0;
 	background-size: cover;
@@ -258,22 +258,22 @@ header .hero p {
   padding: 0 0 15px 0;
 }
 .middle.heading {
-  background-color: #333333;
   position: relative;
   margin: 0 0%;
   width: 100%;
-  /*z-index: 100%;*/
 }
 h5 {
   color: #FFFFFF;
+  background-color: #333333;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  margin-top: -23px;
-  padding: 10px 60px;
-  width: 60%;
+  position: absolute;
+  margin: -33px 10% 0 10%;
+  padding: 10px 0;
+  width: 80%;
 }
 .middle-top {
   background: #4a9ba8;
@@ -436,30 +436,36 @@ footer .container-logo {
 .dashboard {
   background: #F1F2F2;
 }
-.dashboard header > nav > div > a > img {
-  width: 29.1px;
-  height: 40px;
+.dashboard div a {
+  float: left;
 }
-.dashboard header {
-  background-image: none;
+/*.dashboard header {
+  background-image: none;*/
 }
 .dashboard header nav {
   padding: 2em 0;
 }
-.dashboard header nav ul > li > a {
+.dashboard .nav-items {
   color: #3c6973;
-  display: inline-block;
-  margin: 10px 0 0 0;
+  width: 50%
+  margin: 0 0 0 20%;
+  float: left;
 }
-.dashboard img {
+.dashboard form {
+  float: right;
+}
+.dashboard .profile {
+  float: right;
+}
+.dashboard .profile img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   display: inline-block; 
   float: right;
-  margin: 0 80px 0 0px;
+  /*margin: 0 80px 0 0px;*/
 }
-.dashboard header p {
+.dashboard .profile p {
   font-size: 13px;
   font-weight: bold;
   color: #3c6973;
@@ -469,9 +475,25 @@ footer .container-logo {
 .dashboard a:visited {
   color: #3c6973;
 }
-
-
-
+.left-nav .items {
+  margin: 
+  padding: 0 10%;
+}
+.left-nav .items ul li {
+  list-style-type: none;
+}
+.left-nav .items ul li a {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #3c6973;
+}
+.left-nav .items ul li a i {
+  width: 15px;
+  text-align: center;
+  margin-right: 8px;
+}
 
 
 
