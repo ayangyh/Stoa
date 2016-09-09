@@ -436,28 +436,27 @@ footer .container-logo {
 .dashboard {
   background: #F1F2F2;
 }
-.dashboard div a {
+
+/* HEADER NAVBAR */
+.dashboard div {
   float: left;
 }
-/*.dashboard header {
-  background-image: none;*/
-}
-.dashboard header nav {
-  padding: 2em 0;
+/*.dashboard header nav {
+  padding: 2em 0;*/
 }
 .dashboard .nav-items {
   color: #3c6973;
   width: 50%
-  margin: 0 0 0 20%;
+
   float: left;
 }
 .dashboard form {
   float: right;
 }
-.dashboard .profile {
+.dashboard .settings {
   float: right;
 }
-.dashboard .profile img {
+.dashboard .settings img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -465,16 +464,20 @@ footer .container-logo {
   float: right;
   /*margin: 0 80px 0 0px;*/
 }
-.dashboard .profile p {
+.dashboard .settings p {
   font-size: 13px;
   font-weight: bold;
   color: #3c6973;
   display: inline-block;
 }
-
+.dashboard .settings a {
+  margin: 0 10px 0 0;
+}
 .dashboard a:visited {
   color: #3c6973;
 }
+
+/* LEFT NAV */
 .left-nav .items {
   margin: 
   padding: 0 10%;
@@ -495,14 +498,107 @@ footer .container-logo {
   margin-right: 8px;
 }
 
+/* CONTENTS */
+.content {
+  width: 98%
+  padding: 6em 1% 1.5em;
+  float: right;
+  position: relative;
+}
+.content-item {
+  width: 96%;
+  margin: 0 2% 25px;
+  float: left;
+  display: block;
+}
+.item-box {
+  display: block;
+  height: 230px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.40);
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+.item-box > img {
+  position: absolute;
+  height: 100%;
+  width: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.item-box h2 {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 19px;
+  margin: 0;
+}
+.item-box h2 a{
+  color: #3DC7E8;
+  text-decoration: none;
+}
+.item-box h2 img {
+  height: 13px;
+  position: relative;
+  top: 2px;
+  margin-right: 5px;
+}
+.item-box p {
+  color: #333333;
+  font-size: 13px;
+  line-height: 15px;
+  margin: 5px 0 0;
+}
 
-
-
-
-
-
-
-
+/* Larger Mobile Devices */
+@media (min-width: 460px) {
+  .content {
+    padding: 1.5em 1%;
+    float: right;
+    width: 90%;
+    position: relative;
+  }
+  .content-item {
+    width: 46%;
+    margin: 0 2% 25px;
+    float: left;
+    display: block;
+  }
+}
+/* Tablets */
+@media (min-width: 768px) {
+  .content {
+    padding: 1.5em 5%;
+    float: right;
+    width: 90%;
+    position: relative;
+  }
+  .content > .container {
+    width: 700px;
+  }
+  .content-item {
+    width: 31.33333%;
+    margin: 0 1% 25px;
+  }
+}
+/* Laptops and Desktops */
+@media (min-width: 992px) {
+  .content {
+    padding: 1.5em 1%;
+    float: right;
+    width: 83.33333333%;
+    position: relative;
+  }
+  .content > .container {
+    width: auto;
+  }
+  .content-item {
+    width: 23%;
+    margin: 0 1% 25px;
+  }
+}
 
 
 
