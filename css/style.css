@@ -100,7 +100,7 @@ header nav ul > li.btn-outline {
 header nav ul > li.btn-outline:hover {
   background: #16ffc8;
 }
-header nav ul > li > a {
+header .header-hero > nav ul > li > a {
   color: #16ffc8;
   text-decoration: none;
 }
@@ -451,20 +451,40 @@ footer .one-half {
 .dashboard div {
   float: left;
 }
-.dashboard .dashboard.logo {
+.dashboard .dashboard-logo img {
   width: 30px;
+  height: 40px;
 }
 /*.dashboard header nav {
   padding: 2em 0;*/
+.dashboard ul {
+  -webkit-padding-start: 0;
+  margin: 10px 0;
 }
-.dashboard .nav-items {
+.dashboard .nav-items a {
   color: #3c6973;
-  width: 50%
-
   float: left;
+}
+.dashboard .nav-items a:visited {
+  color: #3c6973;
 }
 .dashboard form {
   float: right;
+}
+input[type="text"] {
+    width: 200px;
+    height: 20px;
+    padding-right: 50px;
+}
+
+input[type="submit"] {
+    margin-left: -50px;
+    height: 25px;
+    width: 50px;
+    background: blue;
+    color: white;
+    border: 0;
+    -webkit-appearance: none;
 }
 .dashboard .settings {
   float: right;
@@ -529,9 +549,19 @@ footer .one-half {
   float: left;
   display: block;
 }
-.item-box {
-  display: block;
-  height: 230px;
+.item-box-image {
+  display: inline-block;
+  width: 165px;
+  height: 130px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.40);
+  position: relative;
+  overflow: hidden;
+}
+.item-box-text {
+  display: inline-block;
+  width: 165px;
+  height: 130px;
   background: #FFFFFF;
   box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.40);
   position: relative;
