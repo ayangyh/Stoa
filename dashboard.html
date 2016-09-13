@@ -14,14 +14,16 @@
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/font-awesome.css">
 
-  
+
 
 
 </head>
 <body class="dashboard">
  <!-- HEADER -->
+ <div class="container">
+
   <header>
-  	<nav class="container">
+  	<nav class="">
   	  <div>
   	  	<a href="dashboard.html" class="dashboard-logo"><img src="images/stoa-logo-dashboard.png" alt="Stoa" /></a>
   	  </div>
@@ -41,111 +43,115 @@
         <p>Jane Smith</p>
         <a href="#"><i class="fa fa-chevron-down"></i></a>
       </div>
-      <div class="container">
+      <div class="container" id="files-flag">
        <hr>
         <div class="page-box">
           <h1>My Files</h1>
         </div>
-      </div>    
+      </div>
   	</nav>
   </header>
  <!-- LEFT NAV & CONTENT -->
-  <nav id="left-nav" class="left-nav">
-  	<div class="items">
-  	  <ul>
-  	  	<li><a href="#"><i class="fa fa-files-o"></i> My Files</a></li>
-  	  	<li><a href="#"><i class="fa fa-file-text-o"></i> Notes</a></li>
-  	  	<li><a href="#"><i class="fa fa-file-image-o"></i><a href="assign33.html"> Images</a></a></li>
-  	  	<li><a href="#"><i class="fa fa-link"></i> Links</a></li>
-  	  	<li><a href="#"><i class="fa fa-archive"></i> Boxes</a></li>
-  	  	<li><a href="#"><i class="fa fa-star-o"></i> Favorites</a></li>
-  	  	<li><a href="#"><i class="fa fa-tag"></i> Tags</a></li>
-  	  </ul>
-  	  <ul>
-  	  	<li><a href="#"><i class="fa fa-group"></i> Collaborators</a></li>
-  	  	<li><a href="#"><i class="fa fa-user-plus"></i> Invite</a></li>
-  	  	<li><a href="#"><i class="fa fa-bars"></i> Manage</a></li>
-  	  </ul>
-  	</div>
-  </nav>
-
-  <main role="main">
-    <section class="content">
-      <div class="container">
-        <div class="content-item">
-          <div class="item-box-image">
-            <img src="http://www.lifeofpix.com/wp-content/uploads/2015/11/Life-of-Pix-free-stock-photos-fence-used-sea-AidaSadzak.jpg">
-          </div>
-        </div>
-        <div class="content-item">
-          <div class="item-box-image">
-            <img src="http://www.lifeofpix.com/wp-content/uploads/2016/03/Life-of-Pix-free-stock-buoys-lake-reflection-LEEROY.jpg">
-          </div>
-        </div>
-        <div class="content-item">
-          <div class="item-box-image">
-            <img src="http://www.lifeofpix.com/wp-content/uploads/2016/05/Life-of-Pix-free-stock-sea-road-beach-PaulJarvis.jpg">
-          </div>
-        </div>
-        <div class="content-item">
-          <div class="item-box-text">
-            <h2><img src="http://scoutmagazine.ca/favicon.ico"><a href="#">scoutmagazine.ca</a></h2>
-            <p>The best of Vancouver food and culture, curated by Andrew Morrison and Michelle Sproule.</p>
-          </div>
-        </div>
-        <div class="content-item">
-          <div class="item-box-text">
-            <h2><a href="#">Shopping list</a></h2>
-            <p>&dash; basil<br/>&dash; parmesan cheese<br/>&dash; quinoa<br/>&dash; blackberries</p>
-          </div>
-        </div>
-        <div class="content-item">
-          <div class="item-box-text">
-            <h2><img src="http://design-milk.com/favicon.ico"><a href="#">design-milk.com</a></h2>
-            <p>Design Milk is a website dedicated to modern design run by Jaime Derringer.</p>
-          </div>
-        </div>
-        <div class="content-item">
-          <div class="item-box-image">
-            <img src="http://www.lifeofpix.com/wp-content/uploads/2016/01/Life-of-Pix-free-stock-photos-sea-houses-boat-JulienSister.jpg">
-          </div>
-        </div>
-        <div class="content-item">
-          <div class="item-box-text">
-            <h2><img src="https://soundcloud.com/favicon.ico"><a href="#">soundcloud.com</a></h2>
-            <p>SoundCloud is an audio platform that lets you listen to what you love and share the sounds you create.</p>
-          </div>
-        </div>
-        <div class="content-item">
-          <div class="item-box-image">
-            <img src="http://www.lifeofpix.com/wp-content/uploads/2015/12/Life-of-Pix-free-stock-photos-palmtrees-white-building-macnicolae.jpg">
-          </div>
-        </div>
-        <div class="content-item">
-          <div class="item-box-image">
-            <img src="http://www.lifeofpix.com/wp-content/uploads/2016/03/Life-of-Pix-free-stock-floating-dock-boat-LEEROY.jpg">
-          </div>
-        </div>
-        <div class="content-item">
-          <div class="item-box-text">
-            <h2><a href="#">Outdoor lighting</a></h2>
-            <p>String Lights: These versatile strands of sparkle can do almost anything: define edges and borders; wrap columns, banisters...</p>
-          </div>
-        </div>
-        <div class="content-item">
-          <div class="item-box-text">
-            <h2><a href="#">Cali road trip ideas</a></h2>
-            <p>Napa and Sonoma<br/>Big Sur<br/>Santa Barbara<br/>Ojai<br/>Palm Springs<br/>Venice...</p>
-          </div>
-        </div>
-        <div class="content-item">
-          <div class="item-box-text">
-            <h2><img src="https://s3-us-west-2.amazonaws.com/images.dailyhive.com/assets/apple-touch-icon.png"><a href="#">dailyhive.com</a></h2>
-            <p>Leading digital media company, with hyper local focus dedicated to connecting you with your city's culture.</p>
-          </div>
-        </div>
+ <section>
+   <nav id="left-nav" class="left-nav">
+        <div class="items">
+        <ul>
+        	<li><a href="#"><i class="fa fa-files-o"></i> My Files</a></li>
+        	<li><a href="#"><i class="fa fa-file-text-o"></i> Notes</a></li>
+        	<li><a href="#"><i class="fa fa-file-image-o"></i><a href="assign33.html"> Images</a></a></li>
+        	<li><a href="#"><i class="fa fa-link"></i> Links</a></li>
+        	<li><a href="#"><i class="fa fa-archive"></i> Boxes</a></li>
+        	<li><a href="#"><i class="fa fa-star-o"></i> Favorites</a></li>
+        	<li><a href="#"><i class="fa fa-tag"></i> Tags</a></li>
+        </ul>
+        <ul>
+        	<li><a href="#"><i class="fa fa-group"></i> Collaborators</a></li>
+        	<li><a href="#"><i class="fa fa-user-plus"></i> Invite</a></li>
+        	<li><a href="#"><i class="fa fa-bars"></i> Manage</a></li>
+        </ul>
       </div>
-    </section>
-  </main>
+      </nav>
+
+      <main role="main">
+        <section class="content">
+        <div class="container">
+          <div class="content-item">
+            <div class="item-box-image">
+              <img src="http://www.lifeofpix.com/wp-content/uploads/2015/11/Life-of-Pix-free-stock-photos-fence-used-sea-AidaSadzak.jpg">
+            </div>
+          </div>
+          <div class="content-item">
+            <div class="item-box-image">
+              <img src="http://www.lifeofpix.com/wp-content/uploads/2016/03/Life-of-Pix-free-stock-buoys-lake-reflection-LEEROY.jpg">
+            </div>
+          </div>
+          <div class="content-item">
+            <div class="item-box-image">
+              <img src="http://www.lifeofpix.com/wp-content/uploads/2016/05/Life-of-Pix-free-stock-sea-road-beach-PaulJarvis.jpg">
+            </div>
+          </div>
+          <div class="content-item">
+            <div class="item-box-text">
+              <h2><img src="http://scoutmagazine.ca/favicon.ico"><a href="#">scoutmagazine.ca</a></h2>
+              <p>The best of Vancouver food and culture, curated by Andrew Morrison and Michelle Sproule.</p>
+            </div>
+          </div>
+          <div class="content-item">
+            <div class="item-box-text">
+              <h2><a href="#">Shopping list</a></h2>
+              <p>&dash; basil<br/>&dash; parmesan cheese<br/>&dash; quinoa<br/>&dash; blackberries</p>
+            </div>
+          </div>
+          <div class="content-item">
+            <div class="item-box-text">
+              <h2><img src="http://design-milk.com/favicon.ico"><a href="#">design-milk.com</a></h2>
+              <p>Design Milk is a website dedicated to modern design run by Jaime Derringer.</p>
+            </div>
+          </div>
+          <div class="content-item">
+            <div class="item-box-image">
+              <img src="http://www.lifeofpix.com/wp-content/uploads/2016/01/Life-of-Pix-free-stock-photos-sea-houses-boat-JulienSister.jpg">
+            </div>
+          </div>
+          <div class="content-item">
+            <div class="item-box-text">
+              <h2><img src="https://soundcloud.com/favicon.ico"><a href="#">soundcloud.com</a></h2>
+              <p>SoundCloud is an audio platform that lets you listen to what you love and share the sounds you create.</p>
+            </div>
+          </div>
+          <div class="content-item">
+            <div class="item-box-image">
+              <img src="http://www.lifeofpix.com/wp-content/uploads/2015/12/Life-of-Pix-free-stock-photos-palmtrees-white-building-macnicolae.jpg">
+            </div>
+          </div>
+          <div class="content-item">
+            <div class="item-box-image">
+              <img src="http://www.lifeofpix.com/wp-content/uploads/2016/03/Life-of-Pix-free-stock-floating-dock-boat-LEEROY.jpg">
+            </div>
+          </div>
+          <div class="content-item">
+            <div class="item-box-text">
+              <h2><a href="#">Outdoor lighting</a></h2>
+              <p>String Lights: These versatile strands of sparkle can do almost anything: define edges and borders; wrap columns, banisters...</p>
+            </div>
+          </div>
+          <div class="content-item">
+            <div class="item-box-text">
+              <h2><a href="#">Cali road trip ideas</a></h2>
+              <p>Napa and Sonoma<br/>Big Sur<br/>Santa Barbara<br/>Ojai<br/>Palm Springs<br/>Venice...</p>
+            </div>
+          </div>
+          <div class="content-item">
+            <div class="item-box-text">
+              <h2><img src="https://s3-us-west-2.amazonaws.com/images.dailyhive.com/assets/apple-touch-icon.png"><a href="#">dailyhive.com</a></h2>
+              <p>Leading digital media company, with hyper local focus dedicated to connecting you with your city's culture.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      </main>
+  </section>
+</div>
+
 </body>
 </html>
