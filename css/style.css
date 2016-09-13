@@ -427,7 +427,7 @@ footer nav ul > li {
   list-style-type: none;
   margin: 0 0 0 -40px;
 }
-footer ul i {
+footer ul > li > i {
   font-size: 13px;
   font-weight: normal;
   text-decoration: none;
