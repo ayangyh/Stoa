@@ -464,7 +464,7 @@ footer .one-half {
   padding: 2em 0;*/
 .dashboard .nav-items > ul {
   -webkit-padding-start: 0;
-  margin: 10px 0 10px 60px;
+  margin: 10px 0 10px 165px;
 }
 .dashboard .nav-items a {
   color: #3c6973;
@@ -474,7 +474,8 @@ footer .one-half {
   color: #3c6973;
 }
 .dashboard form {
-  float: right;
+  float: left;
+  margin-left: 24%;
 }
 input[type="text"] {
     width: 200px;
@@ -490,7 +491,7 @@ input[type="submit"] {
     height: 25px;
     width: 50px;
     border-radius: 0 5px 5px 0;
-    /*background: blue;*/
+    background: #3c6973;
     color: white;
     border: 0;
     -webkit-appearance: none;
@@ -541,7 +542,7 @@ hr {
   background: #333333;
   border-radius: 0 0 20px 0;
   min-height: 35px;
-  margin-top: 0;
+  margin: 0 0 0 17.75%;
   position: relative;
   border: 10px 0 0 0;
   border-color: #333333;
