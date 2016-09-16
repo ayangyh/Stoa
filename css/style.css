@@ -178,7 +178,7 @@ header .hero p {
   width: 2em;
   height: 2em;
   line-height: 2em;
-  margin: 50px 0 0 30px;
+  margin: 50px 0 0 -120px;
 }
 .benefits .item {
   margin: 0 0 0 150px;
@@ -231,21 +231,22 @@ header .hero p {
   min-height: 500px;
   position: relative;
   margin-top:  50px;
-  padding: 0 15px;
+  /*padding: 0 15px;*/
 }
 .box.middle {
   background: #FFFFFF;
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
   border-radius: 0 0 20px 20px;
   min-height: 560px;
-  margin-top: 0px;
-  padding: 0px 15px;
+  margin-top: 20px;
+  /*padding: 0px 15px;*/
 }
 .box .top {
   background: #3c6973;
   box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.40);
-  margin: 0 -15px 10px;
+  /*margin: 0 -15px 10px;*/
   padding: 0px 0 25px 0;
+  width: 100%;
 }
 .box h3 {
   font-size: 32px;
@@ -266,7 +267,7 @@ header .hero p {
 }
 .middle.heading {
   position: relative;
-  margin: 5% 0%;
+  /*margin: 5% 0%;*/
   width: 100%;
 }
 .middle.heading h5 {
@@ -285,8 +286,9 @@ header .hero p {
 .middle-top {
   background: #4a9ba8;
   box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.40);
-  margin: 0 -15px 10px;
-  padding: 0px 0 45px 0;
+  /*margin: 0 -15px 10px;*/
+  padding: 0px 0 35px 0;
+  width: 100%;
 }
 .box.middle h3 {
   font-size: 32px;
@@ -323,7 +325,10 @@ header .hero p {
   box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.40);
   text-decoration: none;
   position: relative;
-  bottom: 23px;
+  bottom: 10px;
+}
+.box ul {
+  margin: 25px 0 0 0;
 }
 .box ul li {
   font-size: 21px;
@@ -332,6 +337,7 @@ header .hero p {
   text-align: left;
   width: 250px;
   margin: 0 40px 20px 0px;
+  
 }
 .box.middle ul li {
   font-size: 21px;
@@ -429,6 +435,7 @@ footer nav ul > li {
   margin: 0 0 0 -40px;
 }
 footer ul > li > i {
+  float: left;
   font-size: 13px;
   font-weight: normal;
   text-decoration: none;
