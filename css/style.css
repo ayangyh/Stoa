@@ -493,14 +493,14 @@ input[type="text"] {
     padding-right: 50px;
 }
 
-input[type="submit"] {
-    margin-left: -50px;
+button[type="submit"] {
     height: 25px;
     width: 50px;
     border-radius: 0 5px 5px 0;
-    background: #3c6973;
-    color: white;
+    background: none;
     border: 0;
+    color: #3c6973;
+    margin-left: -50px;
     -webkit-appearance: none;
 }
 .dashboard .settings {
