@@ -13,6 +13,7 @@
    <link rel="stylesheet" href="css/normalize.css">
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/font-awesome.css">
+   <link rel="stylesheet" href="css/dropit.css">
 
 
 
@@ -32,7 +33,16 @@
   	  	  <li><a href="#"><i class="fa fa-th"></i></a></li>
   	  	  <li><a href="#"><i class="fa fa-list-ul"></i></a></li>
   	  	  <li><a href="#"><i class="fa fa-trash-o"></i></a></li>
-  	  	  <li><a href="#"><i class="fa fa-plus"></i></a></li>
+          <ul id="menu1" class="menu">
+              <li><a href="#"><i class="fa fa-plus"></i></a>
+                  <ul>
+                      <li><a href="#">Some Action 1</a></li>
+                      <li><a href="#">Some Action 2</a></li>
+                      <li><a href="#">Some Action 3</a></li>
+                      <li><a href="#">Some Action 4</a></li>
+                  </ul>
+              </li>
+          </ul>
   	  	</ul>
   	  </div>
       <div>
@@ -155,5 +165,10 @@
 </div>
 
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="js/dropit.js"></script>
+<script>
+      $('.menu').dropit();
+</script>
 </body>
 </html>
