@@ -149,7 +149,7 @@ header .hero p {
 
 /* BENEFITS */
 .benefits {
-  background-image: url("../images/dashboard-laptop.png");
+  background-image: url("../images/dashboard-laptop03.png");
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 893px 734px;
@@ -402,13 +402,17 @@ header .hero p {
 }
 .quote p.name {
   font-size: 14px;
-  font-style: italic;
+  /*font-style: italic;*/
   line-height: 19px;
   float: right;
   display: inline-block;
   text-align: right;
   color: #333333;
   margin: 5px 0 0 0px;
+}
+/* SECONDARY CALL OUT */
+.call-out {
+  background-color: 
 }
 /* FOOTER */
 footer h5 {
@@ -434,12 +438,20 @@ footer nav ul > li {
   list-style-type: none;
   margin: 0 0 0 -40px;
 }
-footer ul > li > i {
+/*footer ul > li > i {
   float: left;
   font-size: 13px;
   font-weight: normal;
   text-decoration: none;
   display: inline-block;
+}*/
+footer .footer-items {
+  display: inline;
+  float: right;
+  font-size: 13px;
+  font-weight: normal;
+  text-decoration: none;
+  margin: 0 0 0 40px;
 }
 footer .one-half p {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -485,7 +497,7 @@ footer .one-half {
   margin-left: 24%;
 }
 input[type="text"] {
-    width: 200px;
+    width: 160px;
     height: 20px;
     border-radius: 5px;
     border-color: #FFFFFF;
