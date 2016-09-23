@@ -13,7 +13,7 @@
    <link rel="stylesheet" href="css/normalize.css">
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/font-awesome.css">
-   <link rel="stylesheet" href="css/dropit.css"> -->
+   <link rel="stylesheet" href="css/dropit.css">
 
 <!--  -->
 
@@ -32,18 +32,18 @@
   	  	  <li><a href="#"><i class="fa fa-th"></i></a></li>
   	  	  <li><a href="#"><i class="fa fa-list-ul"></i></a></li>
   	  	  <li><a href="#"><i class="fa fa-trash-o"></i></a></li>
-          <li><a href="#"><i class="fa fa-plus"></i></a></li>
-  	  	  <!--li><a href="#" class="btn nav-items"><i class="fa fa-plus"></i></a></li>
-            <ul class="menu">
-              <li>
-                <a href="#" class="btn nav-items"><i class="fa fa-plus"></a>
-                <ul>
-                  <li><a href="#"><i class="fa fa-file-o"></i> Note</a></li>
-                  <li><a href="#"><i class="fa fa-picture-o"></i> Image</a></li>
-                  <li><a href="#"><i class="fa fa-link"></i> Link</a></li>
-                </ul>
+
+          <ul id="menu1" class="menu">
+              <li><a href="#"><i class="fa fa-plus"></i></a>
+                  <ul>
+                      <li><a href="#"><i class="fa fa-file-text-o"></i>Note</a></li>
+                      <li><a href="#"><i class="fa fa-file-picture-o"></i>Image</a></li>
+                      <li><a href="#"><i class="fa fa-link"></i>Link</a></li>
+                      <li><a href="#"><i class="fa fa-archive"></i>Box</a></li>
+                  </ul>
               </li>
-            </ul> -->
+          </ul>
+
   	  	</ul>
   	  </div>
       <div>
@@ -164,10 +164,13 @@
       </main>
   </section>
 </div>
-<!-- <script src="js/jquery-3.1.0.min.js"></script> -->
-<!-- <script src="js/dropit.js"></script> -->
-<script type="text/javascript">
-  // $(".menu").dropit();
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="js/dropit.js"></script>
+<script>
+      $('.menu').dropit();
 </script>
 </body>
 </html>

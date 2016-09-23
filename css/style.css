@@ -492,6 +492,7 @@ footer .one-half {
 .dashboard .nav-items a:visited {
   color: #3c6973;
 }
+
 .dashboard form {
   float: left;
   margin-left: 24%;
@@ -572,7 +573,9 @@ hr {
   font-size: 21px;
   font-weight: lighter;
   text-transform: uppercase;
-  padding: 0 20px;
+  padding: 0px 20px 0px 20px;
+  margin: 0;
+  margin: 6px 0;
 }
 
 /* LEFT NAV */

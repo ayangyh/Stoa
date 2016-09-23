@@ -26,7 +26,9 @@
                     .find(settings.submenuEl).addClass('dropit-submenu').hide();
 
                     // Open on click
-                    $el.on(settings.action, settings.triggerParentEl +':has('+ settings.submenuEl +') > '+ settings.triggerEl +'', function(){
+
+                    $el.off(settings.action).on(settings.action, settings.triggerParentEl +':has('+ settings.submenuEl +') > '+ settings.triggerEl +'', function(){
+
                         // Close click menu's if clicked again
                         if(settings.action == 'click' && $(this).parents(settings.triggerParentEl).hasClass('dropit-open')){
                             settings.beforeHide.call(this);
@@ -57,7 +59,7 @@
 
                     // If hover
                     if(settings.action == 'mouseenter'){
-                        $el.on('mouseleave', function(){
+                        $el.on('mouseleave', '.dropit-open', function(){
                             settings.beforeHide.call(this);
                             $(this).removeClass('dropit-open').find(settings.submenuEl).hide();
                             settings.afterHide.call(this);
