@@ -57,7 +57,7 @@ nav .left {
   width: 28%;
   margin: 0 0 0 0;
 }
-
+/* MEDIA QUERIES */
 @media (min-width: 500px) {
   header nav ul > li.btn-outline {
     padding: 10px 25px;
@@ -77,6 +77,9 @@ nav .left {
   .container {
   	width: 750px;
   }
+  .benefits .one-half {
+    width: 100%;
+  }
 }
 @media (min-width: 992px) {
   .container {
@@ -91,10 +94,28 @@ nav .left {
   .one-fourth {
   	width: 21%;
   }
+  .benefits .one-half {
+    width: 46%;
+  }
+  .benefits {
+    background-image: url("../images/dashboard-laptop03.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 893px 734px;
+  }
+
 }
 @media (min-width: 1200px) {
   .container {
   	width: 1170px;
+  }
+}
+@media (min-width: 1920px) {
+  .container {
+    width: 1680px;
+  }
+  ul .box {
+
   }
 }
 
@@ -102,8 +123,9 @@ nav .left {
 /* HEADER */
 header .header-hero {
 	background-image: url("../images/background-hero.png");
-	background-position: 0 0;
+	background-position: center;
 	background-size: cover;
+  background-repeat: no-repeat;
   display: block;
 	height: 100vh;
 }
@@ -176,10 +198,7 @@ header .hero p {
 
 /* BENEFITS */
 .benefits {
-  background-image: url("../images/dashboard-laptop03.png");
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: 893px 734px;
+
   padding-top: 20px;
 }
 .benefits ul {
@@ -221,7 +240,6 @@ header .hero p {
   display: inline-block;
   text-align: left;
   font-size: 20px;
-  width: 380px;
   margin: 0 0 0 0;
 }
 .benefits img {
@@ -230,6 +248,14 @@ header .hero p {
   float: right;
   display: inline-block;
   margin: -40px 0 0 50px;
+}
+.benefits .benefit-icon {
+  float: left;
+  width: 25%;
+}
+.benefits .benefit-item {
+  float: right;
+  width: 75%;
 }
 
 /* PRICING */
@@ -422,14 +448,13 @@ header .hero p {
   float: left;
   display: inline-block;
   text-align: left;
-
-  width: 435px;
+  width: 430px;
   height: 54;
   margin: -62px 0 0 0;
 }
 .quote p.name {
   font-size: 14px;
-  /*font-style: italic;*/
+  font-style: italic;
   line-height: 19px;
   float: right;
   display: inline-block;
@@ -629,7 +654,64 @@ hr {
   text-align: center;
   margin-right: 8px;
 }
-
+.left-nav {
+  height: 100%;
+  width: 280px;
+  /*position: absolute;*/
+  /*-webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transform: translate(-280px,0);
+    -webkit-transform: translate(-280px,0); /** Chrome & Safari **/
+   /* -o-transform: translate(-280px,0); /** Opera **/
+    /*-moz-transform: translate(-280px,0); /** Firefox **/
+}
+.left-nav .open {
+  display: block;
+  width: 280px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transform: translate(0,0);
+    -webkit-transform: translate(0,0); /** Chrome & Safari **/
+    -o-transform: translate(0,0); /** Opera **/
+    -moz-transform: translate(0,0); /** Firefox **/
+    z-index: 100;  
+}
+.hamburger {
+  position: absolute;
+  z-index: 1000;
+  background: #3c6973;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 22px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  left: 5px;
+  top: 15px;
+}
+@media (min-width: 992px) {
+  .left-nav {
+    float: left;
+    display: block;
+    transform: translate(0,0);
+      -webkit-transform: translate(0,0); /** Chrome & Safari **/
+      -o-transform: translate(0,0); /** Opera **/
+      -moz-transform: translate(0,0); /** Firefox **/
+  }
+  .left-nav .open {
+    width: 14.66666667%;
+    transform: translate(0,0);
+      -webkit-transform: translate(0,0); /** Chrome & Safari **/
+      -o-transform: translate(0,0); /** Opera **/
+      -moz-transform: translate(0,0); /** Firefox **/
+  }
+  .hamburger {
+    display: none;
+  }
+}
 /* CONTENTS */
 .content {
   width: 98%

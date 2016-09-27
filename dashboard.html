@@ -63,6 +63,9 @@
   	</nav>
   </header>
 
+<!-- RESPONSIVE NAV-->
+<a class="hamburger" id="menu" href="#">&#xf0c9;</a>
+
  <!-- LEFT NAV & CONTENT -->
  <section>
    <nav id="left-nav" class="left-nav">
@@ -170,7 +173,10 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 <script src="js/dropit.js"></script>
 <script>
-      $('.menu').dropit();
+      $(".menu").dropit();
+      $( "#menu" ).click(function() {
+          $("left-nav").toggleClass("open", 200);
+      });
 </script>
 </body>
 </html>
