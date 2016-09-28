@@ -58,6 +58,9 @@ nav .left {
   margin: 0 0 0 0;
 }
 /* MEDIA QUERIES */
+@media (min-width: 375px) {
+
+}
 @media (min-width: 500px) {
   header nav ul > li.btn-outline {
     padding: 10px 25px;
@@ -114,11 +117,22 @@ nav .left {
   .container {
     width: 1680px;
   }
-  ul .box {
-
+  header .hero h1 {
+    font-size: 100px;
+    line-height: 60px;
+    font-weight: 100;
+    margin: 450px 0 20px;
+    color: #FFFFFF;
+  }
+  header .hero p {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif !important; 
+  font-size: 32px !important;
+  line-height: 40px !important;
+  font-weight: 300;
+  margin: 20px 0 30px;
+  color: #3DC7E8 !important;
   }
 }
-
 
 /* HEADER */
 header .header-hero {
@@ -251,11 +265,11 @@ header .hero p {
 }
 .benefits .benefit-icon {
   float: left;
-  width: 25%;
+  width: 10%;
 }
 .benefits .benefit-item {
   float: right;
-  width: 75%;
+  width: 95%;
 }
 
 /* PRICING */
@@ -380,6 +394,10 @@ header .hero p {
   position: relative;
   bottom: 10px;
 }
+.box .plus {
+  float:left;
+  margin: 0 10px 10px 0;
+}
 .box ul {
   margin: 25px 0 0 0;
 }
@@ -388,7 +406,7 @@ header .hero p {
   line-height: 31px;
   font-weight: normal;
   text-align: left;
-  width: 250px;
+  width: 90%;
   margin: 0 40px 20px 0px;
   
 }
@@ -517,7 +535,18 @@ footer .one-half img {
 footer .one-half {
   margin: 0;
 }
-
+footer .contact {
+  list-style-type: none;
+  margin: 0 0 0 -40px;
+}
+footer .contact-icon {
+  display: inline;
+  float: right;
+  list-style-type: none;
+  margin: 0 0 0 -40px;
+  position: absolute; 
+  /*text-align: center; */
+}
 /* DASHBOARD */
 .dashboard {
   background: #F1F2F2;
@@ -822,4 +851,24 @@ hr {
     width: 23%;
     margin: 0 1% 25px;
   }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    width: 1680px;
+  }
+    nav .left {
+    width: 26%;
+    margin: 0 2% 20px;
+  }
+  nav .right {
+    width: 66%;
+    margin: 0 2% 20px;
+  }
+  header .hero h1 {
+    font-size: 80px;
+    line-height: 60px;
+    font-weight: 400;
+    margin: 450px 0 20px;
+    color: #FFFFFF;
 }
