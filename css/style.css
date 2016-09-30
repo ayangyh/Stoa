@@ -97,6 +97,22 @@ nav .left {
   .one-fourth {
   	width: 21%;
   }
+}
+@media (min-width: 1200px) {
+  .container {
+  	width: 1170px;
+  }
+  .benefits p {
+    width: 80%;
+  }
+  .pricing  {
+    background-attachment: fixed;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1360px;
+  }
   .benefits .one-half {
     width: 46%;
   }
@@ -108,11 +124,8 @@ nav .left {
   }
 
 }
-@media (min-width: 1200px) {
-  .container {
-  	width: 1170px;
-  }
-}
+
+/* ASSIGNMENT 30 */
 @media (min-width: 1920px) {
   .container {
     width: 1680px;
@@ -137,11 +150,11 @@ nav .left {
 /* HEADER */
 header .header-hero {
 	background-image: url("../images/background-hero.png");
-	background-position: center;
+	background-position: center center;
 	background-size: cover;
   background-repeat: no-repeat;
   display: block;
-	height: 100vh;
+	height: 120%;
 }
 header nav {
   padding: 2em 0;
@@ -179,6 +192,7 @@ header .hero {
   text-align: center;
   display: block;
   position: relative;
+  margin-bottom: 120px;
 }
 header .hero h1 {
   font-size: 50px;
@@ -192,8 +206,12 @@ header .hero p {
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
-  margin: 10px 0 30px;
+  margin: 10px 25% 30px;
   color: #FFFFFF;
+  position: relative;
+  text-align: center;
+  /*width: 80%;*/
+  /*max-width: 100%;*/
 }
 
 /* BUTTONS */
@@ -212,7 +230,6 @@ header .hero p {
 
 /* BENEFITS */
 .benefits {
-
   padding-top: 20px;
 }
 .benefits ul {
@@ -254,6 +271,7 @@ header .hero p {
   display: inline-block;
   text-align: left;
   font-size: 20px;
+  width: 80%;
   margin: 0 0 0 0;
 }
 .benefits img {
@@ -396,7 +414,7 @@ header .hero p {
 }
 .box .plus {
   float:left;
-  margin: 0 10px 10px 0;
+  margin: 0 10px 10px -5px;
 }
 .box ul {
   margin: 25px 0 0 0;
@@ -438,7 +456,7 @@ header .hero p {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 20px;
   color: #FFFFFF;
-  width: 345px;
+  width: 80%;
   margin-left: 80px;
 }
 .testimonials li {
@@ -466,9 +484,9 @@ header .hero p {
   float: left;
   display: inline-block;
   text-align: left;
-  width: 430px;
+  width: 100%;
   height: 54;
-  margin: -62px 0 0 0;
+  margin: -30px 0 0 0;
 }
 .quote p.name {
   font-size: 14px;
@@ -478,8 +496,12 @@ header .hero p {
   display: inline-block;
   text-align: right;
   color: #333333;
-  margin: 5px 0 0 0px;
+  margin: 10px 0 0 0px;
 }
+/*.testimonial .test-down {*/
+  margin-top: 30px;
+}
+
 /* SECONDARY CALL OUT */
 .call-out {
   background-color: 
