@@ -8,15 +8,30 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto Slab', Times, Georgia, serif;
 }
-h2 {
+/*h1 {
+  font-size: 50px;
+  font-weight: normal;
+}*/
+/*h2 {
   font-size: 28px;
   font-weight: normal;
   margin-bottom: 5px;
-}
+}*/
 p {
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 24px;
+  line-height: 1.25em;
   font-weight: 100;
+}
+@media (min-width: 320px) {
+  p {
+    font-size: 14px;
+    /*line-height: 19px;*/
+  }
+}
+@media (min-width: 768px) {
+  p {
+    font-size: 24px;
+  }
 }
 
 /* GRID */
@@ -58,8 +73,41 @@ nav .left {
   margin: 0 0 0 0;
 }
 /* MEDIA QUERIES */
-@media (min-width: 375px) {
+/* MOBILES */
+@media (min-width: 320px) {
+  header .header-hero {
+    background-image: url("../images/background-hero.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    height: 80vh;
+  }
+  header .hero h1 {
+    font-size: 1.5em;
+    line-height: 1.25em;
+    font-weight: 400;
+    margin: 4em 10% 20px;
+    color: #3DC7E8;
+  }
+  header .hero p {
+    margin: 2px 10% 30px;
+  }
+  .btn {
+    padding: 10px 15px;
+  }
+/* .pricing ul.container {
+    padding: 0 0em;
+  }*/
+  .testimonials h2 {
+    font-size: 28px;
+    color: #FFFFFF;
+    margin: 2em 0 0;
+  }
 
+/*  .testimonials p {
+    margin: 40px;
+  }*/
 }
 @media (min-width: 500px) {
   header nav ul > li.btn-outline {
@@ -75,7 +123,7 @@ nav .left {
   }
 }
 
-
+/* TABLETS */
 @media (min-width: 768px) {
   .container {
   	width: 750px;
@@ -83,7 +131,27 @@ nav .left {
   .benefits .one-half {
     width: 100%;
   }
+  header .hero h1 {
+    font-size: 2.5em;
+    margin: 9em 10% 20px;
+  }
+  .btn {
+    padding: 10px 30px;
+  }
+  .pricing ul.container {
+    padding: 0 9em;
+  }
+  .pricing .box.middle {
+    margin-top: 40px;
+  }
+  .testimonials h2 {
+    font-size: 28px;
+    color: #FFFFFF;
+    margin: 2em 0 0;
+  }
 }
+
+/* LAPTOPS & DESKTOPS */
 @media (min-width: 992px) {
   .container {
   	width: 970px;
@@ -97,6 +165,25 @@ nav .left {
   .one-fourth {
   	width: 21%;
   }
+  header .hero h1 {
+    font-size: 2.75em;
+    margin: 8em 10% 20px;
+  }
+  header .hero p {
+    margin: 2px 25% 30px;
+  }
+  .btn {
+    padding: 10px 30px;
+  }
+  .pricing ul.container {
+    margin-top: 3em;
+    }
+  .testimonials h2 {
+    font-size: 28px;
+    color: #FFFFFF;
+    margin: 7.5em 0 0;
+  }
+
 }
 @media (min-width: 1200px) {
   .container {
@@ -107,6 +194,25 @@ nav .left {
   }
   .pricing .one-third  {
     display: inline-block;
+  }
+  .testimonials {
+    background-image: url("../images/image-testimonial-block.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #3c6973;
+    /*height: 80vh;*/
+    text-align: left;
+  }
+  .testimonials blockquote {
+    /*color: #FFFFFF;*/
+    font-size: 14px;
+    font-weight: bold;
+    float: left;
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    height: 54;
+    margin: -30px 0 0 0;
   }
 }
 @media (min-width: 1400px) {
@@ -122,25 +228,7 @@ nav .left {
     background-position: right bottom;
     background-size: 893px 734px;
   }
-  .testimonials {
-    background-image: url("../images/image-testimonial-block.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #3c6973;
-    /*height: 80vh;*/
-    text-align: left;
-  }
-  .testimonials blockquote {
-    color: #3DC7E8;
-    font-size: 14px;
-    font-weight: bold;
-    float: left;
-    display: inline-block;
-    text-align: left;
-    width: 100%;
-    height: 54;
-    margin: -30px 0 0 0;
-  }
+
 }
 
 /* ASSIGNMENT 30 */
@@ -149,8 +237,8 @@ nav .left {
     width: 1680px;
   }
   header .hero h1 {
-    font-size: 100px;
-    line-height: 60px;
+    /*font-size: 2em;*/
+    /*line-height: 60px;*/
     font-weight: 100;
     margin: 450px 0 20px;
     color: #FFFFFF;
@@ -167,12 +255,12 @@ nav .left {
 
 /* HEADER */
 header .header-hero {
-	background-image: url("../images/background-hero.png");
+/*	background-image: url("../images/background-hero.png");
 	background-position: center center;
 	background-size: cover;
   background-repeat: no-repeat;
-  display: block;
-	height: 120%;
+  display: block;*/
+	/*height: 120%;*/
 }
 header nav {
   padding: 2em 0;
@@ -213,18 +301,18 @@ header .hero {
   margin-bottom: 120px;
 }
 header .hero h1 {
-  font-size: 50px;
-  line-height: 60px;
+  /*font-size: 2.5em;*/
+  /*line-height: 60px;*/
   font-weight: 400;
-  margin: 450px 0 20px;
+  /*margin: 6em 10% 20px;*/
   color: #3DC7E8;
 }
 header .hero p {
   font-family: 'Roboto Slab', Times, Georgia, serif;
-  font-size: 24px;
-  line-height: 30px;
+  /*font-size: 24px;*/
+  /*line-height: 30px;*/
   font-weight: 300;
-  margin: 10px 25% 30px;
+  /*margin: 10px 25% 30px;*/
   color: #FFFFFF;
   position: relative;
   text-align: center;
@@ -240,7 +328,7 @@ header .hero p {
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 10px 30px;
+  /*padding: 10px 30px;*/
   background: #16ffc8;
   border: 2px solid #16ffc8;
   box-shadow: 0px 2px 0px 0px #16ffc8;
@@ -248,14 +336,14 @@ header .hero p {
 
 /* BENEFITS */
 .benefits {
-  padding-top: 20px;
+  padding: 0.1em 0;
 }
 .benefits ul {
   text-align: left;
   display: inline-block;
   position: relative;
   margin: ;
-  padding: 100px 0 100px 0;
+  padding: 3em  0;
 }
 .benefits li {
   list-style-type: none;
@@ -300,7 +388,6 @@ header .hero p {
   margin: -40px 0 0 50px;
 }
 .benefits .benefit-icon {
-  float: left;
   width: 10%;
 }
 .benefits .benefit-item {
@@ -323,7 +410,7 @@ header .hero p {
   color: #FFFFFF;
 }
 .pricing ul.container {
-  margin-top: 80px;
+  /*margin-top: 3em;*/
 }
 .pricing ul li {
   list-style-type: none;
@@ -342,7 +429,7 @@ header .hero p {
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
   border-radius: 0 0 20px 20px;
   min-height: 560px;
-  margin-top: 20px;
+  /*margin-top: 20px;*/
   /*padding: 0px 15px;*/
 }
 .box .top {
@@ -462,22 +549,24 @@ header .hero p {
   background-size: cover;
   /*height: 80vh;*/
   background-color: #3c6973;
+  /*padding: 2em 0;*/
   text-align: left;
 }
 .testimonials .container {
   -webkit-margin-before: 0px;
+  -webkit-padding-start: 0px;
 }
-.testimonials h2 {
+/*.testimonials h2 {
   font-size: 28px;
   color: #FFFFFF;
-  margin: 180px 0 0 80px;
-}
+  margin: 7.5em 0 0 80px;
+}*/
 .testimonials p {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 20px;
   color: #FFFFFF;
   width: 80%;
-  margin-left: 80px;
+  /*margin-left: 80px;*/
 }
 .testimonials li {
   margin: 50px 0 0 0;
@@ -507,7 +596,7 @@ header .hero p {
   width: 100%;
   height: 54;
   margin: -30px 0 0 0;
-  color: #FFFFFF;
+  color: #333333;
 }
 .quote p.name {
   font-size: 14px;
@@ -694,7 +783,7 @@ hr {
 .page-box h1 {
   color: #FFFFFF;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  font-size: 21px;
+  /*font-size: 21px;*/
   font-weight: lighter;
   text-transform: uppercase;
   padding: 0px 20px 0px 20px;
@@ -909,7 +998,7 @@ hr {
     margin: 0 2% 20px;
   }
   header .hero h1 {
-    font-size: 80px;
+    /*font-size: 1.6em;*/
     line-height: 60px;
     font-weight: 400;
     margin: 450px 0 20px;
