@@ -1060,18 +1060,20 @@ hr {
     float: left;
     display: block;
   }
+  nav .logo {
+    float: none;
+  }
   .logo {
     width: 5%;
     margin: 0 auto;
   }
-
   .dashboard .dashboard-logo img {
     margin: 0 auto;
   }
-  .dashboard .nav-items {
+  .dashboard .no-mobile {
     display: none;
   }
-  .dashboard form {
+  .no-mobile form {
     display: none;
   }
 }
@@ -1100,10 +1102,15 @@ hr {
   .content > .container {
     width: 700px;
   }
-
   .content-item {
     width: 31.33333%;
     margin: 0 1% 25px;
+  }
+  .dashboard .no-mobile {
+    display: none;
+  }
+  .no-mobile form {
+    display: none;
   }
 }
 /* Laptops and Desktops */
@@ -1121,12 +1128,20 @@ hr {
     width: 23%;
     margin: 0 1% 25px;
   }
-
+  nav .logo {
+    float: left;
+  }
   .dashboard .nav-items {
     display: block;
   }
   .dashboard .dashboard-logo img {
     margin-left: 0;
+  }
+  .dashboard .no-mobile {
+    display: block;
+  }
+  .no-mobile form {
+    display: block;
   }
 }
 
