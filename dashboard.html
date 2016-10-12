@@ -24,10 +24,10 @@
 
   <header>
   	<nav class="">
-  	  <div>
+  	  <div class="logo">
   	  	<a href="dashboard.html" class="dashboard-logo"><img src="images/stoa-logo-dashboard.png" alt="Stoa" /></a>
   	  </div>
-  	  <div class="nav-items">
+  	  <div class="nav-items no-mobile">
   	  	<ul>
   	  	  <li><a href="#"><i class="fa fa-th"></i></a></li>
   	  	  <li><a href="#"><i class="fa fa-list-ul"></i></a></li>
@@ -83,6 +83,20 @@
         	<li><a href="#"><i class="fa fa-group"></i> Collaborators</a></li>
         	<li><a href="#"><i class="fa fa-user-plus"></i> Invite</a></li>
         	<li><a href="#"><i class="fa fa-bars"></i> Manage</a></li>
+        </ul>
+        <ul class="mobile">
+          <li><a href="#"><i class="fa fa-th"></i></a></li>
+          <li><a href="#"><i class="fa fa-list-ul"></i></a></li>
+          <li><a href="#"><i class="fa fa-trash-o"></i></a></li>
+          <li><a href="#"><i class="fa fa-plus"></i></a>
+                  <ul>
+                      <li><a href="#"><i class="fa fa-file-text-o"></i>Note</a></li>
+                      <li><a href="#"><i class="fa fa-file-picture-o"></i>Image</a></li>
+                      <li><a href="#"><i class="fa fa-link"></i>Link</a></li>
+                      <li><a href="#"><i class="fa fa-archive"></i>Box</a></li>
+                  </ul>
+              </li>
+
         </ul>
       </div>
       </nav>
@@ -175,7 +189,8 @@
 <script>
       $(".menu").dropit();
       $( "#menu" ).click(function() {
-          $("left-nav").toggleClass("open", 200);
+          $("#left-nav").toggleClass("open", 200);
+          console.log('working');
       });
 </script>
 </body>

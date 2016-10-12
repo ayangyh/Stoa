@@ -191,6 +191,9 @@ nav .left {
     padding-left: 0;
     padding-right: 0;
   }
+  .one-fourth {
+    width: 21%;
+  }
   .benefits .one-half {
     width: 100%;
   }
@@ -734,7 +737,7 @@ footer a {
   line-height: 19px;
   text-decoration: none;
   text-align: left;
-  margin: 0 80px 0 0px;
+  margin: 0 0px 0 0px;
 }
 footer a:visited {
   color: #333333;
@@ -775,18 +778,21 @@ footer .contact {
   margin: 0 0 0 -40px;
 }
 footer .contact-icon {
-  display: inline;
-  float: right;
-  list-style-type: none;
-  margin: 0 0 0 -40px;
-  position: absolute; 
-  /*text-align: center; */
+  margin: 0 0 0 -5em;
+  padding: 1.5em 0 0 0;
 }
+footer .contact-icon li {
+  display: inline;
+  float: left;
+  list-style-type: none;
+  margin: 0 0 0 1em;
+  position: relative; 
+}
+
 /* DASHBOARD */
 .dashboard {
   background: #F1F2F2;
 }
-
 /* HEADER NAVBAR */
 .container div {
   float: left;
@@ -801,6 +807,9 @@ footer .contact-icon {
   -webkit-padding-start: 0;
   margin: 10px 0 10px 165px;
 }*/
+.dashboard .nav-items {
+  margin: 8px 0 0 31.5%;
+}
 .dashboard .nav-items a {
   color: #3c6973;
   float: left;
@@ -811,7 +820,7 @@ footer .contact-icon {
 
 .dashboard form {
   float: left;
-  margin-left: 24%;
+  margin-left: 49%;
 }
 input[type="text"] {
     width: 160px;
@@ -834,6 +843,7 @@ button[type="submit"] {
 }
 .dashboard .settings {
   float: right;
+  width: 15%;
 }
 .dashboard .settings img {
   width: 40px;
@@ -848,7 +858,8 @@ button[type="submit"] {
   font-weight: bold;
   color: #3c6973;
   display: inline-block;
-  margin-top: 5px;
+  margin-top: 12px;
+  /*text-align: right;*/
 }
 .dashboard .settings a {
   margin: 0 10px 0 0;
@@ -878,7 +889,7 @@ hr {
   background: #333333;
   border-radius: 0 0 20px 0;
   min-height: 35px;
-/*  margin: 0 0 0 17.75%;*/
+  margin: 0 16.5%;
   position: relative;
   border: 10px 0 0 0;
   border-color: #333333;
@@ -896,8 +907,8 @@ hr {
 
 /* LEFT NAV */
 .left-nav .items {
-  margin:
-  padding: 0 0%;
+  /*margin:;*/
+  padding: 7.25em 0;
 }
 .left-nav ul {
   -webkit-padding-start: 0px;
@@ -921,7 +932,10 @@ hr {
 .left-nav {
   height: 100%;
   width: 280px;
+  float: left;
   position: absolute;
+  color: #FFFFFF;
+  /*background: green;*/
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -931,9 +945,10 @@ hr {
     -o-transform: translate(-280px,0); /** Opera **/
     -moz-transform: translate(-280px,0); /** Firefox **/
 }
-.left-nav .open {
+.open {
   display: block;
   width: 280px;
+  /*right: 400px;*/
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -947,8 +962,7 @@ hr {
 .hamburger {
   position: absolute;
   z-index: 1000;
-  background: #3c6973;
-  color: #FFFFFF;
+  color: #3c6973;
   text-decoration: none;
   font-size: 22px;
   padding: 10px 15px;
@@ -958,8 +972,12 @@ hr {
 }
 @media (min-width: 992px) {
   .left-nav {
+    height: 100vh;
+    width: 14.66666667%;
+    color: #FFFFFF;
     float: left;
     display: block;
+    position: fixed;
     transform: translate(0,0);
       -webkit-transform: translate(0,0); /** Chrome & Safari **/
       -o-transform: translate(0,0); /** Opera **/
@@ -991,7 +1009,7 @@ hr {
 }
 .item-box-image {
   display: inline-block;
-  width: 165px;
+  width: 75%;
   height: 130px;
   background: #FFFFFF;
   box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.40);
@@ -1001,7 +1019,7 @@ hr {
 }
 .item-box-text {
   display: inline-block;
-  width: 165px;
+  width: 75%;
   height: 130px;
   background: #FFFFFF;
   box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.40);
@@ -1009,10 +1027,114 @@ hr {
   overflow: hidden;
   padding: 20px;
 }
+
+.no-mobile {
+  display: none;
+}
+
+.mobile {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .no-mobile {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+}
+
+
+/* Mobile Devices */
+@media (min-width: 320px) {
+  .content {
+    padding: 1.5em 1%;
+    float: right;
+    width: 90%;
+    position: relative;
+  }
+  .content-item {
+    width: 96%;
+    margin: 0 2% 25px;
+    float: left;
+    display: block;
+  }
+  .logo {
+    width: 5%;
+    margin: 0 auto;
+  }
+
+  .dashboard .dashboard-logo img {
+    margin: 0 auto;
+  }
+  .dashboard .nav-items {
+    display: none;
+  }
+  .dashboard form {
+    display: none;
+  }
+}
+@media (min-width: 460px) {
+  .content {
+    padding: 1.5em 1%;
+    float: right;
+    width: 90%;
+    position: relative;
+  }
+  .content-item {
+    width: 46%;
+    margin: 0 2% 25px;
+    float: left;
+    display: block;
+  }
+}
+/* Tablets */
+@media (min-width: 768px) {
+  .content {
+    padding: 1.5em 5%;
+    float: right;
+    width: 90%;
+    position: relative;
+  }
+  .content > .container {
+    width: 700px;
+  }
+
+  .content-item {
+    width: 31.33333%;
+    margin: 0 1% 25px;
+  }
+}
+/* Laptops and Desktops */
+@media (min-width: 992px) {
+  .content {
+    padding: 1.5em 1%;
+    float: right;
+    width: 83.33333333%;
+    position: relative;
+  }
+  .content > .container {
+    width: auto;
+  }
+  .content-item {
+    width: 23%;
+    margin: 0 1% 25px;
+  }
+
+  .dashboard .nav-items {
+    display: block;
+  }
+  .dashboard .dashboard-logo img {
+    margin-left: 0;
+  }
+}
+
 .item-box-image > img {
   position: absolute;
   height: 100%;
-  width: auto;
+  width: fill;
+  /*object-fit: scale-down;*/
   top: 0;
   left: 0;
   right: 0;
@@ -1024,7 +1146,7 @@ hr {
   line-height: 19px;
   margin: 0;
 }
-.item-box-text h2 a{
+.item-box-text h2 a {
   color: #3DC7E8;
   text-decoration: none;
 }
@@ -1042,7 +1164,7 @@ hr {
 }
 /* Larger Mobile Devices */
 @media (min-width: 460px) {
-  .content {
+/*  .content {
     padding: 0em 1%;
     float: right;
     width: 90%;
@@ -1054,10 +1176,10 @@ hr {
     float: left;
     display: block;
   }
-}
+}*/
 /* Tablets */
 @media (min-width: 768px) {
-  .dashboard .nav-items > ul {
+/*  .dashboard .nav-items > ul {
     margin: 10px 0 10px 50px;
   }
   .page-box {
@@ -1076,9 +1198,9 @@ hr {
     width: 31.33333%;
     margin: 0 1% 25px;
   }
-}
+}*/
 /* Laptops and Desktops */
-@media (min-width: 992px) {
+/*@media (min-width: 992px) {
   .dashboard .nav-items > ul {
     -webkit-padding-start: 0;
     margin: 10px 0 10px 165px;
@@ -1102,9 +1224,9 @@ hr {
   .left-nav {
     padding-top: 6em;
   }
-}
+}*/
 
-@media (min-width: 1920px) {
+/*@media (min-width: 1920px) {
   .container {
     width: 1680px;
   }
@@ -1122,4 +1244,4 @@ hr {
     font-weight: 400;
     margin: 450px 0 20px;
     color: #FFFFFF;
-}
+}*/
