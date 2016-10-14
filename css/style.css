@@ -843,7 +843,7 @@ button[type="submit"] {
 }
 .dashboard .settings {
   float: right;
-  width: 15%;
+  /*width: 15%;*/
 }
 .dashboard .settings img {
   width: 40px;
@@ -870,7 +870,7 @@ button[type="submit"] {
 hr {
   display: block;
   position: relative;
-  margin-top: 0.5em;
+  /*margin-top: 0.5em;*/
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
@@ -886,30 +886,28 @@ hr {
 }
 
 .page-box {
-  background: #333333;
+/*  background: #333333;*/
   border-radius: 0 0 20px 0;
   min-height: 35px;
-  margin: 0 16.5%;
+  margin: 0 16.5% 30px;
   position: relative;
   border: 10px 0 0 0;
   border-color: #333333;
 }
 .page-box h1 {
-  color: #FFFFFF;
+/*  color: #FFFFFF;*/
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   /*font-size: 21px;*/
   font-weight: lighter;
   text-transform: uppercase;
-  padding: 0px 20px 0px 20px;
-  margin: 0;
-  margin: 6px 0;
+  padding: 0px 20px;
+  margin: 5px 0;
 }
 
 /* LEFT NAV */
-.left-nav .items {
-  /*margin:;*/
-  padding: 7.25em 0;
-}
+/*.left-nav .items {
+  margin: 5.5em 0 5.5em 40%;
+}*/
 .left-nav ul {
   -webkit-padding-start: 0px;
   margin: 0 0 0 0;
@@ -947,7 +945,8 @@ hr {
 }
 .open {
   display: block;
-  width: 280px;
+  width: 250px;
+  background: #333333;
   /*right: 400px;*/
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -997,7 +996,7 @@ hr {
 /* CONTENTS */
 .content {
   width: 98%
-  padding: 6em 1% 1.5em;
+  padding: 0 1% 1.5em;
   float: right;
   position: relative;
 }
@@ -1041,15 +1040,18 @@ hr {
     display: block;
   }
   .mobile {
-    display: none;
+    display: block;
   }
 }
 
 
 /* Mobile Devices */
 @media (min-width: 320px) {
+  .container {
+    padding: 0;
+  }
   .content {
-    padding: 1.5em 1%;
+    /*padding*/: 1.5em 1%;
     float: right;
     width: 90%;
     position: relative;
@@ -1070,16 +1072,28 @@ hr {
   .dashboard .dashboard-logo img {
     margin: 0 auto;
   }
-  .dashboard .no-mobile {
+  .dashboard > .no-mobile {
     display: none;
   }
-  .no-mobile form {
+  .no-mobile > form {
+    display: none;
+  }
+  .hamburger-left {
+    width: 26%;
+    margin: .5em 2% 20px;
+  }
+  .settings-right {
+    float: right;
+    width: 18%;
+    margin: -2.75em 6% 20px;
+  }
+  .no-mobile > p {
     display: none;
   }
 }
 @media (min-width: 460px) {
   .content {
-    padding: 1.5em 1%;
+    padding: 0 1% 1.5em 1%;
     float: right;
     width: 90%;
     position: relative;
@@ -1094,13 +1108,14 @@ hr {
 /* Tablets */
 @media (min-width: 768px) {
   .content {
-    padding: 1.5em 5%;
+    padding: 0 5% 1.5em 5%;
     float: right;
     width: 90%;
     position: relative;
   }
   .content > .container {
     width: 700px;
+    padding: 0;
   }
   .content-item {
     width: 31.33333%;
@@ -1109,14 +1124,35 @@ hr {
   .dashboard .no-mobile {
     display: none;
   }
-  .no-mobile form {
+  .no-mobile > form {
     display: none;
+  }
+  .hamburger-left {
+    width: 26%;
+    margin: .5em 2% 20px;
+  }
+  .settings-right {
+    float: right;
+    width: 18%;
+    margin: -2.75em 6% 20px;
+  }
+  #files-flag > .no-mobile {
+    display: none;
+  }
+  .page-box {
+    background: #F1F2F2;
+  }
+  .page-box h1 {
+    color: #333333;
+  }
+  .left-nav .items {
+    margin: 2.5em 0 .5em 20%;
   }
 }
 /* Laptops and Desktops */
 @media (min-width: 992px) {
   .content {
-    padding: 1.5em 1%;
+    padding: 0 1% 1.5em 1%;
     float: right;
     width: 83.33333333%;
     position: relative;
@@ -1140,8 +1176,28 @@ hr {
   .dashboard .no-mobile {
     display: block;
   }
-  .no-mobile form {
+  .no-mobile > form {
     display: block;
+  }
+  .settings-right {
+    float: right;
+    width: 11%;
+    margin: 0 2% 20px;
+  }
+  #files-flag > .no-mobile {
+    display: block;
+  }
+  .page-box {
+    background: #333333;
+  }
+  .page-box h1 {
+    color: #FFFFFF;
+  }
+  .mobile {
+    display: none;
+  }
+  .left-nav .items {
+    margin: 5.5em 0 5.5em 40%;
   }
 }
 
