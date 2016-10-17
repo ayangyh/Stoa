@@ -882,7 +882,7 @@ hr {
 
 #files-flag {
   margin-bottom: 20px;
-  padding-left: 0;
+  /*padding-left: 0;*/
 }
 
 .page-box {
@@ -929,7 +929,7 @@ hr {
 }
 .left-nav {
   height: 0;
-  width: 280px;
+  /*width: 280px;*/
   float: left;
   position: relative;
   color: #FFFFFF;
@@ -945,8 +945,8 @@ hr {
 }
 .open {
   display: block;
-  width: 250px;
-  background: #333333;
+  /*width: 250px;*/
+/*  background: #333333;*/
   /*right: 400px;*/
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -982,7 +982,7 @@ hr {
       -o-transform: translate(0,0); /** Opera **/
       -moz-transform: translate(0,0); /** Firefox **/
   }
-  .left-nav .open {
+  .left-nav .container .open {
     width: 14.66666667%;
     transform: translate(0,0);
       -webkit-transform: translate(0,0); /** Chrome & Safari **/
@@ -1047,10 +1047,10 @@ hr {
 
 /* Mobile Devices */
 @media (min-width: 320px) {
-  .dashboard .container {
-    padding: 0em;
+  .dashboard .container .left-nav .open {
+    margin-top: 0 auto;
   }
-  .dashboard .container .left-nav {
+  .dashboard .left-nav .container {
     width: auto;
   }
   .content {
@@ -1080,6 +1080,9 @@ hr {
   }
   .no-mobile > form {
     display: none;
+  }
+  .open {
+    padding-left: 30px;
   }
   .hamburger-left {
     width: 26%;
@@ -1127,6 +1130,9 @@ hr {
   .dashboard .no-mobile {
     display: none;
   }
+  .open {
+    padding-left: 40px;
+  }
   .no-mobile > form {
     display: none;
   }
@@ -1149,7 +1155,7 @@ hr {
     color: #333333;
   }
   .left-nav .items {
-    margin-top: 2.5em;
+    /*margin-top: 2.5em;*/
   }
 }
 /* Laptops and Desktops */
