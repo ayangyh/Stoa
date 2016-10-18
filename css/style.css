@@ -946,7 +946,7 @@ hr {
 .open {
   display: block;
   /*width: 250px;*/
-  background: #333333;
+  /*background: #333333;*/
   /*right: 400px;*/
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -1053,6 +1053,9 @@ hr {
   .dashboard .left-nav .container {
     width: auto;
   }
+  .dashboard  header nav {
+    padding: 2em 0 0 0;
+  }
   .content {
     /*padding*/: 1.5em 1%;
     float: right;
@@ -1091,7 +1094,7 @@ hr {
   .settings-right {
     float: right;
     width: 18%;
-    margin: -2.75em 6% 20px;
+    margin: -2.75em 0 20px;
   }
   .no-mobile > p {
     display: none;
@@ -1136,7 +1139,7 @@ hr {
     display: none;
   }
   .open {
-    /*padding-left: 40px;*/
+    padding-left: 40px;
   }
   .no-mobile > form {
     display: none;
