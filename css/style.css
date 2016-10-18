@@ -946,7 +946,7 @@ hr {
 .open {
   display: block;
   /*width: 250px;*/
-/*  background: #333333;*/
+  background: #333333;
   /*right: 400px;*/
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -1082,7 +1082,7 @@ hr {
     display: none;
   }
   .open {
-    padding-left: 30px;
+    /*padding-left: 30px;*/
   }
   .hamburger-left {
     width: 26%;
@@ -1131,7 +1131,7 @@ hr {
     display: none;
   }
   .open {
-    padding-left: 40px;
+    /*padding-left: 40px;*/
   }
   .no-mobile > form {
     display: none;
@@ -1191,7 +1191,7 @@ hr {
   .settings-right {
     float: right;
     width: 11%;
-    margin: 0 2% 20px;
+    margin: 0 0 20px 2%;
   }
   #files-flag > .no-mobile {
     display: block;
@@ -1214,7 +1214,7 @@ hr {
 .item-box-image > img {
   position: absolute;
   height: 100%;
-  width: fill;
+  width: 100%;
   /*object-fit: scale-down;*/
   top: 0;
   left: 0;
