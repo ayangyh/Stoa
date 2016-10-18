@@ -889,7 +889,7 @@ hr {
 /*  background: #333333;*/
   border-radius: 0 0 20px 0;
   min-height: 35px;
-  margin: 0 16.5% 30px;
+/*  margin: 0 16.5% 30px;*/
   position: relative;
   border: 10px 0 0 0;
   border-color: #333333;
@@ -1096,6 +1096,11 @@ hr {
   .no-mobile > p {
     display: none;
   }
+  #files-flag .page-box {
+    float: none;
+    margin: 0 auto;
+    width: 60%;
+  }
 }
 @media (min-width: 460px) {
   .content {
@@ -1148,6 +1153,11 @@ hr {
   #files-flag > .no-mobile {
     display: none;
   }
+  #files-flag .page-box {
+    float: none;
+    margin: 0 auto;
+    width: 25%;
+  }
   .page-box {
     background: #F1F2F2;
   }
@@ -1195,6 +1205,11 @@ hr {
   }
   #files-flag > .no-mobile {
     display: block;
+  }
+  #files-flag .page-box {
+    float: left;
+    margin: 0 16.5% 30px;
+    width: 13%;
   }
   .page-box {
     background: #333333;
