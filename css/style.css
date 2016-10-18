@@ -851,6 +851,10 @@ button[type="submit"] {
   border-radius: 50%;
   display: inline-block;
   float: right;
+  right: 5px;
+  top: 22px;
+  padding: 10px 15px;
+  position: absolute;
   /*margin: 0 80px 0 0px;*/
 }
 .dashboard .settings p {
@@ -882,14 +886,14 @@ hr {
 
 #files-flag {
   margin-bottom: 20px;
-  padding-left: 0;
+  /*padding-left: 0;*/
 }
 
 .page-box {
 /*  background: #333333;*/
   border-radius: 0 0 20px 0;
   min-height: 35px;
-  margin: 0 16.5% 30px;
+/*  margin: 0 16.5% 30px;*/
   position: relative;
   border: 10px 0 0 0;
   border-color: #333333;
@@ -929,7 +933,7 @@ hr {
 }
 .left-nav {
   height: 100%;
-  width: 280px;
+  width: 180px;
   float: left;
   position: absolute;
   color: #FFFFFF;
@@ -945,7 +949,7 @@ hr {
 }
 .open {
   display: block;
-  width: 250px;
+  width: 180px;
   background: #333333;
   /*right: 400px;*/
   -webkit-transition: all 0.3s ease-in-out;
@@ -967,7 +971,7 @@ hr {
   padding: 10px 15px;
   border-radius: 4px;
   left: 5px;
-  top: 15px;
+  top: 22px;
 }
 @media (min-width: 992px) {
   .left-nav {
@@ -976,13 +980,13 @@ hr {
     color: #FFFFFF;
     float: left;
     display: block;
-    position: fixed;
+    position: absolute;
     transform: translate(0,0);
       -webkit-transform: translate(0,0); /** Chrome & Safari **/
       -o-transform: translate(0,0); /** Opera **/
       -moz-transform: translate(0,0); /** Firefox **/
   }
-  .left-nav .open {
+  .left-nav .container .open {
     width: 14.66666667%;
     transform: translate(0,0);
       -webkit-transform: translate(0,0); /** Chrome & Safari **/
@@ -1047,8 +1051,14 @@ hr {
 
 /* Mobile Devices */
 @media (min-width: 320px) {
-  .container {
-    padding: 0;
+  .dashboard .container .left-nav .open {
+    margin-top: 0 auto;
+  }
+  .dashboard .left-nav .container {
+    width: auto;
+  }
+  .dashboard  header nav {
+    padding: 2em 0 0 0;
   }
   .content {
     /*padding*/: 1.5em 1%;
@@ -1072,23 +1082,39 @@ hr {
   .dashboard .dashboard-logo img {
     margin: 0 auto;
   }
-  .dashboard > .no-mobile {
+  .dashboard .no-mobile {
+    display: none;
+  }
+  .dashboard .settings .no-mobile {
     display: none;
   }
   .no-mobile > form {
     display: none;
   }
+  .open {
+    padding-left: 15px;
+    padding-top: 30px;
+  }
   .hamburger-left {
     width: 26%;
-    margin: .5em 2% 20px;
+    /*margin: .5em 2% 20px;*/
   }
   .settings-right {
     float: right;
     width: 18%;
-    margin: -2.75em 6% 20px;
+    /*margin: -2.75em 0 20px;*/
   }
   .no-mobile > p {
     display: none;
+  }
+  #files-flag .page-box {
+    float: none;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    width: 60%;
+  }
+  .left-nav .items ul li {
+    padding: 5px 0;
   }
 }
 @media (min-width: 460px) {
@@ -1124,20 +1150,35 @@ hr {
   .dashboard .no-mobile {
     display: none;
   }
+  .open {
+    padding-left: 40px;
+  }
   .no-mobile > form {
     display: none;
   }
   .hamburger-left {
     width: 26%;
-    margin: .5em 2% 20px;
+    /*margin: .5em 2% 20px;*/
   }
   .settings-right {
     float: right;
     width: 18%;
-    margin: -2.75em 6% 20px;
+    /*margin: -2.75em 6% 20px;*/
   }
   #files-flag > .no-mobile {
     display: none;
+  }
+  .dashboard .settings .no-mobile {
+    display: block;
+    padding: 10px 15px;
+    position: absolute;
+    right: 45px;
+    top: 22px;
+  }
+  #files-flag .page-box {
+    float: none;
+    margin: 0 auto;
+    width: 25%;
   }
   .page-box {
     background: #F1F2F2;
@@ -1146,7 +1187,7 @@ hr {
     color: #333333;
   }
   .left-nav .items {
-    margin: 2.5em 0 .5em 20%;
+    /*margin-top: 2.5em;*/
   }
 }
 /* Laptops and Desktops */
@@ -1182,10 +1223,16 @@ hr {
   .settings-right {
     float: right;
     width: 11%;
-    margin: 0 2% 20px;
+    margin: 0 0 20px 2%;
   }
   #files-flag > .no-mobile {
     display: block;
+  }
+  #files-flag .page-box {
+    float: left;
+    margin: 0 16.5% 30px;
+    padding-bottom: 0;
+    width: 13%;
   }
   .page-box {
     background: #333333;
@@ -1197,14 +1244,18 @@ hr {
     display: none;
   }
   .left-nav .items {
-    margin: 5.5em 0 5.5em 40%;
+    margin-top: 5em;
+    width: 130px;
+  }
+  .left-nav .items ul li {
+    padding: 0 0;
   }
 }
 
 .item-box-image > img {
   position: absolute;
   height: 100%;
-  width: fill;
+  width: 100%;
   /*object-fit: scale-down;*/
   top: 0;
   left: 0;
