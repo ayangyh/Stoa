@@ -928,10 +928,10 @@ hr {
   margin-right: 8px;
 }
 .left-nav {
-  height: 0;
-  /*width: 280px;*/
+  height: 100%;
+  width: 180px;
   float: left;
-  position: relative;
+  position: absolute;
   color: #FFFFFF;
   /*background: green;*/
   -webkit-transition: all 0.3s ease-in-out;
@@ -945,8 +945,8 @@ hr {
 }
 .open {
   display: block;
-  /*width: 250px;*/
-  /*background: #333333;*/
+  width: 180px;
+  background: #333333;
   /*right: 400px;*/
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -1085,7 +1085,8 @@ hr {
     display: none;
   }
   .open {
-    /*padding-left: 30px;*/
+    padding-left: 15px;
+    padding-top: 30px;
   }
   .hamburger-left {
     width: 26%;
@@ -1102,6 +1103,7 @@ hr {
   #files-flag .page-box {
     float: none;
     margin: 0 auto;
+    padding-bottom: 10px;
     width: 60%;
   }
 }
@@ -1212,6 +1214,7 @@ hr {
   #files-flag .page-box {
     float: left;
     margin: 0 16.5% 30px;
+    padding-bottom: 0;
     width: 13%;
   }
   .page-box {
