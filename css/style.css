@@ -851,6 +851,10 @@ button[type="submit"] {
   border-radius: 50%;
   display: inline-block;
   float: right;
+  right: 5px;
+  top: 22px;
+  padding: 10px 15px;
+  position: absolute;
   /*margin: 0 80px 0 0px;*/
 }
 .dashboard .settings p {
@@ -967,7 +971,7 @@ hr {
   padding: 10px 15px;
   border-radius: 4px;
   left: 5px;
-  top: 15px;
+  top: 22px;
 }
 @media (min-width: 992px) {
   .left-nav {
@@ -1090,12 +1094,12 @@ hr {
   }
   .hamburger-left {
     width: 26%;
-    margin: .5em 2% 20px;
+    /*margin: .5em 2% 20px;*/
   }
   .settings-right {
     float: right;
     width: 18%;
-    margin: -2.75em 0 20px;
+    /*margin: -2.75em 0 20px;*/
   }
   .no-mobile > p {
     display: none;
@@ -1105,6 +1109,9 @@ hr {
     margin: 0 auto;
     padding-bottom: 10px;
     width: 60%;
+  }
+  .left-nav .items ul li {
+    padding: 5px 0;
   }
 }
 @media (min-width: 460px) {
@@ -1148,12 +1155,12 @@ hr {
   }
   .hamburger-left {
     width: 26%;
-    margin: .5em 2% 20px;
+    /*margin: .5em 2% 20px;*/
   }
   .settings-right {
     float: right;
     width: 18%;
-    margin: -2.75em 6% 20px;
+    /*margin: -2.75em 6% 20px;*/
   }
   #files-flag > .no-mobile {
     display: none;
@@ -1229,6 +1236,9 @@ hr {
   .left-nav .items {
     margin-top: 5em;
     width: 130px;
+  }
+  .left-nav .items ul li {
+    padding: 0 0;
   }
 }
 
