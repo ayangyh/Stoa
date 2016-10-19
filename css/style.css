@@ -901,7 +901,7 @@ hr {
 .page-box h1 {
 /*  color: #FFFFFF;*/
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  /*font-size: 21px;*/
+/*  font-size: 2em;*/
   font-weight: lighter;
   text-transform: uppercase;
   padding: 0px 20px;
@@ -1076,7 +1076,7 @@ hr {
     float: none;
   }
   .logo {
-    width: 5%;
+    width: 10%;
     margin: 0 auto;
   }
   .dashboard .dashboard-logo img {
@@ -1111,7 +1111,10 @@ hr {
     float: none;
     margin: 0 auto;
     padding-bottom: 10px;
-    width: 60%;
+    width: 50%;
+  }
+  .page-box h1 {
+    font-size: 1.5em;
   }
   .left-nav .items ul li {
     padding: 5px 0;
@@ -1147,6 +1150,10 @@ hr {
     width: 31.33333%;
     margin: 0 1% 25px;
   }
+  .logo {
+    width: 5%;
+    margin: 0 auto;
+  }
   .dashboard .no-mobile {
     display: none;
   }
@@ -1178,7 +1185,7 @@ hr {
   #files-flag .page-box {
     float: none;
     margin: 0 auto;
-    width: 25%;
+    width: 20%;
   }
   .page-box {
     background: #F1F2F2;
@@ -1239,6 +1246,7 @@ hr {
   }
   .page-box h1 {
     color: #FFFFFF;
+    font-size: 2em;
   }
   .mobile {
     display: none;
@@ -1248,7 +1256,7 @@ hr {
     width: 130px;
   }
   .left-nav .items ul li {
-    padding: 0 0;
+    padding: 5px 0;
   }
 }
 
