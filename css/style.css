@@ -820,7 +820,8 @@ footer .contact-icon li {
 
 .dashboard form {
   float: left;
-  margin-left: 49%;
+  margin-left: 120%;
+  margin-top: -36px;
 }
 input[type="text"] {
     width: 160px;
@@ -1099,6 +1100,15 @@ hr {
     top: 2px;
     left: -5px;
   }
+  .open .fa-th {
+    display: none;
+  }
+  .open .fa-list-ul {
+    display: none;
+  }
+  .open .fa-trash-o {
+    display: none;
+  }
   .hamburger-left {
     width: 26%;
     /*margin: .5em 2% 20px;*/
@@ -1122,6 +1132,13 @@ hr {
   }
   .left-nav .items ul li {
     padding: 5px 0;
+  }
+  .left-nav .open .fa-th {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  /*.left-nav .items ul .fa-list-ul {*/
+    padding: none;
   }
 }
 @media (min-width: 460px) {
@@ -1199,9 +1216,6 @@ hr {
   }
   .page-box h1 {
     color: #333333;
-  }
-  .left-nav .items {
-    /*margin-top: 2.5em;*/
   }
 }
 /* Laptops and Desktops */
