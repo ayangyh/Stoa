@@ -1139,11 +1139,9 @@ hr {
   .left-nav .items ul li {
     padding: 5px 0;
   }
-  .items > .mobile > .fa.fa-th {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-}
+/* .left-nav .items ul li a {
+    color: #F1F2F2;
+}*/
 @media (min-width: 460px) {
   .content {
     padding: 0 1% 1.5em 1%;
@@ -1281,6 +1279,9 @@ hr {
   }
   .left-nav .items ul li {
     padding: 5px 0;
+  }
+  .left-nav .items ul li a {
+    color: #3c6973;
   }
 }
 
