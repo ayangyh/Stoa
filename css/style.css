@@ -854,9 +854,9 @@ button[type="submit"] {
   float: right;
   right: 5px;
   top: 22px;
-  padding: 10px 15px;
+  padding: 10px 0;
   position: absolute;
-  /*margin: 0 80px 0 0px;*/
+  margin: 0;
 }
 .dashboard .settings p {
   font-size: 13px;
@@ -1202,7 +1202,7 @@ hr {
   }
   .dashboard .settings .no-mobile {
     display: block;
-    padding: 10px 15px;
+    padding: 10px 0 10px 15px;
     position: absolute;
     right: 45px;
     top: 22px;
