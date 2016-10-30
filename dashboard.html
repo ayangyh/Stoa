@@ -34,7 +34,7 @@
   	  	  <li><a href="#"><i class="fa fa-list-ul"></i></a></li>
   	  	  <li><a href="#"><i class="fa fa-trash-o"></i></a></li>
 
-          <ul id="menu1" class="menu">
+          <ul id="menu" class="menu">
               <li><a href="#"><i class="fa fa-plus"></i></a>
                   <ul>
                       <li><a href="#"><i class="fa fa-file-text-o"></i>Note</a></li>
@@ -206,6 +206,12 @@
           $("#left-nav").toggleClass("open", 200);
           console.log('working');
       });
+      $( "#menu2" ).click(function() {
+          $("#settings").toggleClass("open", 200);
+          console.log('working');
+      });
+
+
 </script>
 </body>
 </html>

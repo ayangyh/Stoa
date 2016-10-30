@@ -61,19 +61,6 @@
    border-width: 10px;
    margin-left: 5px;
  }
-#menu2 .dropit .dropit-open .dropit-submenu:before {
-   bottom: 100%;
-   left: 65%;
-   border: solid transparent;
-   content: " ";
-   height: 0;
-   width: 0;
-   position: absolute;
-   pointer-events: none;
-   border-bottom-color: #4A9BA8;
-   border-width: 10px;
-   margin-left: 5px;
- }
 .dropit .dropit-open .dropit-submenu li {
     display: block;
     margin-bottom:  20px;
@@ -92,3 +79,77 @@
     margin: 7px;
 }
 
+/* MENU 2 - SETTINGS */
+#menu2 .dropit {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /*margin: 0px 0 0;*/
+    float: right;
+    display: inline-block;
+
+}
+#menu2 .dropit .dropit-trigger { position: relative; }
+#menu2 .dropit-submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;  /* dropdown left or right */
+    z-index: 1000;
+    display: none;
+    min-width: 180px;
+    list-style: none;
+    padding: 10px 20px 10px;
+    padding-left: 10px;
+    margin: 0 0 0 -100px;
+    text-align: left;
+}
+#menu2 .dropit .dropit-open .dropit-submenu { 
+    display: block; 
+    background: green;
+    box-shadow:  0px 2px 4px 0px rgba(0,0,0,0.30);
+    border-radius: 4px;
+}
+#menu2 .dropit .dropit-open .dropit-submenu:after {
+    content: " ";
+    position: absolute;
+    border-style: solid;
+    border-width: 0 8px 8px;
+    border-color: transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    top: -8px;
+    right: 10px;
+}
+#menu2 .dropit-submenu:before {
+   bottom: 100%;
+   left: 82%;
+   border: solid transparent;
+   content: " ";
+   height: 0;
+   width: 0;
+   position: absolute;
+   pointer-events: none;
+   border-bottom-color: #4A9BA8;
+   border-width: 10px;
+   margin-left: 5px;
+}
+#menu2 .dropit-submenu li {
+    display: block;
+    margin-bottom: 20px;
+    margin: 0;
+    padding: 3px;
+}
+#menu2 .dropit .dropit-open .dropit-submenu li:last-child {
+    margin-bottom: 0px;
+}
+#menu2 .dropit .dropit-open .dropit-submenu li a {
+    color: #FFFFFF;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: 100px;
+    text-decoration: none;
+    margin: 3px;
+}
+#menu2 .dropit .dropit-open .dropit-submenu i {
+    margin: 7px;
+}
